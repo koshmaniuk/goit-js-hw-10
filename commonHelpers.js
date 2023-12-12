@@ -2,7 +2,7 @@ import{a as i}from"./assets/vendor-a61d8330.js";(function(){const o=document.cre
                 <div>
                 <h1>${s.name}</h1>
                 <p>${s.description}</p>
-                <p>Temperament: ${s.temperament}</p>
+                <p><span style="font-weight: bold;">Temperament:</span> ${s.temperament}</p>
                 </div>`}).catch(n=>{u.style.display="block"})}i.defaults.headers.common["x-api-key"]="live_sqb8Cv5y2YS9Hf2WEqoZ7KDBAEFJ7Xw9Xi8579d7Bims2AvGILCcxRFdBYsTGXic";const d=document.querySelector(".breed-select"),m=document.querySelector(".loader"),y=document.querySelector(".error");y.style.display="none";p().then(t=>{t.status===200&&(m.style.display="none",d.insertAdjacentHTML("beforeend",h(t.data)))}).catch(t=>console.log("Error!!!!",t));function h(t){return t.map(({id:o,name:n})=>`
     <option value="${o}">${n}</option>
     `).join("")}d.addEventListener("change",f);
