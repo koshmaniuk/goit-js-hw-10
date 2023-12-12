@@ -31,7 +31,7 @@ function fetchCatByBreed(event) {
                 <div>
                 <h1>${catInfo.name}</h1>
                 <p>${catInfo.description}</p>
-                <p>Temperament: ${catInfo.temperament}</p>
+                <p><span style="font-weight: bold;">Temperament:</span> ${catInfo.temperament}</p>
                 </div>`
             })
             .catch(error => {
