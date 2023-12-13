@@ -28,6 +28,9 @@ function createMarkup(arr) {
 
 function createCatMarkup(event) {
     event.preventDefault()
+    loader.style.display = "block";
+    errorText.style.display = "none";
+    list.innerHTML = "";
     fetchCatByBreed(event)
         .then(resp => {
             errorText.style.display = "none";
